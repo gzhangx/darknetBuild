@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4FD698B3-F387-3061-B861-4F8401570B76}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.3.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\cur\dark\darknet\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/cur/dark/darknet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\utils\cmake\bin\cmake.exe -SD:/work/cur/dark/darknet -BD:/work/cur/dark/darknetBuild --check-stamp-file D:/work/cur/dark/darknetBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\utils\cmake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPack.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPackComponent.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindOpenMP.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindThreads.cmake;D:\utils\cmake\share\cmake-3.28\Modules\InstallRequiredSystemLibraries.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\utils\cmake\share\cmake-3.28\Modules\SelectLibraryConfigurations.cmake;D:\utils\cmake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;D:\utils\cmake\share\cmake-3.28\Templates\CPackConfig.cmake.in;D:\utils\cv\build_opencv\OpenCVConfig-version.cmake;D:\utils\cv\build_opencv\OpenCVConfig.cmake;D:\utils\cv\build_opencv\OpenCVModules.cmake;D:\work\cur\dark\darknet\DarknetConfig.cmake.in;D:\work\cur\dark\darknet\cmake\Modules\FindCUDNN.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindPThreads4W.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindStb.cmake;D:\work\cur\dark\darknet\src\version.h.in;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\cur\dark\darknetBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/cur/dark/darknet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\utils\cmake\bin\cmake.exe -SD:/work/cur/dark/darknet -BD:/work/cur/dark/darknetBuild --check-stamp-file D:/work/cur/dark/darknetBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\utils\cmake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPack.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPackComponent.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindOpenMP.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindThreads.cmake;D:\utils\cmake\share\cmake-3.28\Modules\InstallRequiredSystemLibraries.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\utils\cmake\share\cmake-3.28\Modules\SelectLibraryConfigurations.cmake;D:\utils\cmake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;D:\utils\cmake\share\cmake-3.28\Templates\CPackConfig.cmake.in;D:\utils\cv\build_opencv\OpenCVConfig-version.cmake;D:\utils\cv\build_opencv\OpenCVConfig.cmake;D:\utils\cv\build_opencv\OpenCVModules.cmake;D:\work\cur\dark\darknet\DarknetConfig.cmake.in;D:\work\cur\dark\darknet\cmake\Modules\FindCUDNN.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindPThreads4W.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindStb.cmake;D:\work\cur\dark\darknet\src\version.h.in;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\cur\dark\darknetBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/cur/dark/darknet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\utils\cmake\bin\cmake.exe -SD:/work/cur/dark/darknet -BD:/work/cur/dark/darknetBuild --check-stamp-file D:/work/cur/dark/darknetBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\utils\cmake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPack.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPackComponent.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindOpenMP.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindThreads.cmake;D:\utils\cmake\share\cmake-3.28\Modules\InstallRequiredSystemLibraries.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\utils\cmake\share\cmake-3.28\Modules\SelectLibraryConfigurations.cmake;D:\utils\cmake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;D:\utils\cmake\share\cmake-3.28\Templates\CPackConfig.cmake.in;D:\utils\cv\build_opencv\OpenCVConfig-version.cmake;D:\utils\cv\build_opencv\OpenCVConfig.cmake;D:\utils\cv\build_opencv\OpenCVModules.cmake;D:\work\cur\dark\darknet\DarknetConfig.cmake.in;D:\work\cur\dark\darknet\cmake\Modules\FindCUDNN.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindPThreads4W.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindStb.cmake;D:\work\cur\dark\darknet\src\version.h.in;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\cur\dark\darknetBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/cur/dark/darknet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\utils\cmake\bin\cmake.exe -SD:/work/cur/dark/darknet -BD:/work/cur/dark/darknetBuild --check-stamp-file D:/work/cur/dark/darknetBuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\utils\cmake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPack.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CPackComponent.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLanguage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindOpenMP.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindPackageMessage.cmake;D:\utils\cmake\share\cmake-3.28\Modules\FindThreads.cmake;D:\utils\cmake\share\cmake-3.28\Modules\InstallRequiredSystemLibraries.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\utils\cmake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;D:\utils\cmake\share\cmake-3.28\Modules\SelectLibraryConfigurations.cmake;D:\utils\cmake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;D:\utils\cmake\share\cmake-3.28\Templates\CPackConfig.cmake.in;D:\utils\cv\build_opencv\OpenCVConfig-version.cmake;D:\utils\cv\build_opencv\OpenCVConfig.cmake;D:\utils\cv\build_opencv\OpenCVModules.cmake;D:\work\cur\dark\darknet\DarknetConfig.cmake.in;D:\work\cur\dark\darknet\cmake\Modules\FindCUDNN.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindPThreads4W.cmake;D:\work\cur\dark\darknet\cmake\Modules\FindStb.cmake;D:\work\cur\dark\darknet\src\version.h.in;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;D:\work\cur\dark\darknetBuild\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\cur\dark\darknetBuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\cur\dark\darknetBuild\ZERO_CHECK.vcxproj">
+      <Project>{43422E3B-5843-3C89-A6B3-AB2DEFDE3F2F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\cur\dark\darknetBuild\dark.vcxproj">
+      <Project>{F7AC820B-3137-3726-B8FE-57B5C3E55552}</Project>
+      <Name>dark</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\cur\dark\darknetBuild\darknet.vcxproj">
+      <Project>{28FF832E-F872-349F-A235-23A5F4353368}</Project>
+      <Name>darknet</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\cur\dark\darknetBuild\kmeansiou.vcxproj">
+      <Project>{D5D9EA22-29FC-3464-A0DC-02E143D17E3C}</Project>
+      <Name>kmeansiou</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\cur\dark\darknetBuild\uselib.vcxproj">
+      <Project>{F2FA0EB9-7F6B-3A4C-8955-4052296539A5}</Project>
+      <Name>uselib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\cur\dark\darknetBuild\uselib_track.vcxproj">
+      <Project>{DB2A1260-6A95-3DFE-B953-F1EBE707A5EA}</Project>
+      <Name>uselib_track</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.3.targets" />
+  </ImportGroup>
+</Project>

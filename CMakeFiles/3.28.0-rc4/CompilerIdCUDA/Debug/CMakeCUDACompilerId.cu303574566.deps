@@ -1,0 +1,76 @@
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_malloc.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_memory.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_search.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wtime.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\math.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\cmath
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\concurrencysal.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\crtdefs.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\cstdlib
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\limits.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\sal.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\use_ansi.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\vadefs.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\vcruntime.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\vcruntime_new.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\vcruntime_new_debug.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\vcruntime_string.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\xkeycheck.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\xtr1common
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\yvals.h
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\yvals_core.h
+D:\utils\cuda\include\builtin_types.h
+D:\utils\cuda\include\channel_descriptor.h
+D:\utils\cuda\include\crt\common_functions.h
+D:\utils\cuda\include\crt\cudacc_ext.h
+D:\utils\cuda\include\crt\device_double_functions.h
+D:\utils\cuda\include\crt\device_double_functions.hpp
+D:\utils\cuda\include\crt\device_functions.h
+D:\utils\cuda\include\crt\device_functions.hpp
+D:\utils\cuda\include\crt\host_config.h
+D:\utils\cuda\include\crt\host_defines.h
+D:\utils\cuda\include\crt\math_functions.h
+D:\utils\cuda\include\crt\math_functions.hpp
+D:\utils\cuda\include\crt\sm_70_rt.h
+D:\utils\cuda\include\crt\sm_80_rt.h
+D:\utils\cuda\include\crt\sm_90_rt.h
+D:\utils\cuda\include\cuda_device_runtime_api.h
+D:\utils\cuda\include\cuda_runtime.h
+D:\utils\cuda\include\cuda_runtime_api.h
+D:\utils\cuda\include\cuda_surface_types.h
+D:\utils\cuda\include\cuda_texture_types.h
+D:\utils\cuda\include\device_atomic_functions.h
+D:\utils\cuda\include\device_launch_parameters.h
+D:\utils\cuda\include\device_types.h
+D:\utils\cuda\include\driver_functions.h
+D:\utils\cuda\include\driver_types.h
+D:\utils\cuda\include\library_types.h
+D:\utils\cuda\include\sm_20_atomic_functions.h
+D:\utils\cuda\include\sm_20_intrinsics.h
+D:\utils\cuda\include\sm_30_intrinsics.h
+D:\utils\cuda\include\sm_32_atomic_functions.h
+D:\utils\cuda\include\sm_32_intrinsics.h
+D:\utils\cuda\include\sm_35_atomic_functions.h
+D:\utils\cuda\include\sm_35_intrinsics.h
+D:\utils\cuda\include\sm_60_atomic_functions.h
+D:\utils\cuda\include\sm_61_intrinsics.h
+D:\utils\cuda\include\surface_functions.h
+D:\utils\cuda\include\surface_indirect_functions.h
+D:\utils\cuda\include\surface_types.h
+D:\utils\cuda\include\texture_fetch_functions.h
+D:\utils\cuda\include\texture_indirect_functions.h
+D:\utils\cuda\include\texture_types.h
+D:\utils\cuda\include\vector_functions.h
+D:\utils\cuda\include\vector_functions.hpp
+D:\utils\cuda\include\vector_types.h

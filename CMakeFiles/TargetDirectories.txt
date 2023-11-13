@@ -1,0 +1,9 @@
+D:/work/cur/dark/darknetBuild/CMakeFiles/dark.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/uselib_track.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/uselib.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/darknet.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/kmeansiou.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/PACKAGE.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/INSTALL.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/ALL_BUILD.dir
+D:/work/cur/dark/darknetBuild/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,23 @@
+https://docs.opencv.org/4.x/d3/d52/tutorial_windows_install.html#tutorial_windows_install_build
+
+
+cd D:\utils\cv\build_opencv
+cmake -G"Visual Studio 17 2022" -DBUILD_PERF_TESTS:BOOL=OFF -DBUILD_TESTS:BOOL=OFF -DBUILD_DOCS:BOOL=OFF  -DWITH_CUDA:BOOL=OFF -DBUILD_EXAMPLES:BOOL=OFF -DINSTALL_CREATE_DISTRIB=ON -DOPENCV_EXTRA_MODULES_PATH=d:/utils/cv/opencv_contrib/modules -DCMAKE_INSTALL_PREFIX=d:/utils/cv/install/opencv d:\utils\cv\opencv
+
+
+cmake --build .  --config release
+
+cmake --build .  --target install --config release
+
+
+
+/MTd /Zi /Ob0 /Od /RTC1
+/MT /O1 /Ob1 /DNDEBUG
+
+
+
+cd D:\utils\cv\build_opencvLib
+cmake -G"Visual Studio 17 2022" -DBUILD_PERF_TESTS:BOOL=OFF -DBUILD_TESTS:BOOL=OFF -DBUILD_DOCS:BOOL=OFF  -DWITH_CUDA:BOOL=OFF -DBUILD_EXAMPLES:BOOL=OFF -DINSTALL_CREATE_DISTRIB=ON -DOPENCV_EXTRA_MODULES_PATH=d:/utils/cv/opencv_contrib/modules -DCMAKE_INSTALL_PREFIX=d:/utils/cv/install/opencvLib -DCMAKE_CXX_FLAGS_DEBUG="/MTd /Zi /Ob0 /Od /RTC1" -DCMAKE_CXX_FLAGS_MINSIZEREL="/MT /O1 /Ob1 /DNDEBUG" -DCMAKE_CXX_FLAGS_RELEASE="/MT /O2 /Ob2 /DNDEBUG" -DCMAKE_CXX_FLAGS_RELWITHDEBINFO="/MT /Zi /O2 /Ob1 /DNDEBUG" -DCMAKE_C_FLAGS_DEBUG="/MTd /Zi /Ob0 /Od /RTC1" -DCMAKE_C_FLAGS_RELEASE="/MT /O2 /Ob2 /DNDEBUG" d:\utils\cv\opencv
+
+
+cmake -G"Visual Studio 17 2022" -DBUILD_PERF_TESTS:BOOL=OFF -DBUILD_TESTS:BOOL=OFF -DBUILD_DOCS:BOOL=OFF  -DWITH_CUDA:BOOL=ON -DBUILD_EXAMPLES:BOOL=OFF -DINSTALL_CREATE_DISTRIB=ON -DOPENCV_DNN_CUDA=OFF -DOPENCV_EXTRA_MODULES_PATH=d:/utils/cv/opencv_contrib/modules -DCMAKE_INSTALL_PREFIX=d:/utils/cv/install/opencvLib -DCMAKE_CXX_FLAGS_DEBUG="/MTd /Zi /Ob0 /Od /RTC1" -DCMAKE_CXX_FLAGS_MINSIZEREL="/MT /O1 /Ob1 /DNDEBUG" -DCMAKE_CXX_FLAGS_RELEASE="/MT /O2 /Ob2 /DNDEBUG" -DCMAKE_CXX_FLAGS_RELWITHDEBINFO="/MT /Zi /O2 /Ob1 /DNDEBUG" -DCMAKE_C_FLAGS_DEBUG="/MTd /Zi /Ob0 /Od /RTC1" -DCMAKE_C_FLAGS_RELEASE="/MT /O2 /Ob2 /DNDEBUG"  d:\utils\cv\opencv

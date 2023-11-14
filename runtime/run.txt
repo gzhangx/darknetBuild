@@ -1,0 +1,7 @@
+darknet.exe detect cfg/yolov4.cfg yolov4.weights data/dog.jpg
+
+darknet detect cfg\yolov4.cfg yolov4.weights data\dog.jpg
+
+
+d:\utils\cuda\bin
+cublastlt64_11.dll

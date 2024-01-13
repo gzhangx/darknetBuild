@@ -1,4 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>detector test D:\work\cur\ccauto2\yolodata\coc\data.txt D:\work\cur\ccauto2\yolodata\coc\yolov4-tiny.cfg D:\work\cur\ccauto2\yolodata\coc\yolov4-tiny_last.weights D:\work\cur\ccauto2\yolodata\coc\images\test2024-01-03-092109.png -json_file_output test.json</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)\Release</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

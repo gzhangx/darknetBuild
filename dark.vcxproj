@@ -416,6 +416,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="YoloApi.cpp" />
     <ClInclude Include="D:\work\cur\dark\darknet\include\yolo_v2_class.hpp" />
     <ClCompile Include="D:\work\cur\dark\darknet\src\yolo_v2_class.cpp" />
     <ClCompile Include="D:\work\cur\dark\darknet\src\activation_layer.c" />

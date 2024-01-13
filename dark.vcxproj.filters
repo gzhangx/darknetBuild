@@ -217,6 +217,9 @@
     <ClCompile Include="D:\work\cur\dark\darknet\3rdparty\getopt\getopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="YoloApi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\work\cur\dark\darknet\include\yolo_v2_class.hpp">
